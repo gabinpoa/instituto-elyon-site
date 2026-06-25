@@ -1,8 +1,9 @@
 ---
 import LayoutBase from "../layouts/LayoutBase.astro";
+import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Para as Famílias - Instituto Elyon">
+<LayoutBase title="Apoio Familiar Dependência Química RS | Instituto Elyon" description="A dependência afeta toda a família. Oferecemos suporte terapêutico, orientação e ferramentas de enfrentamento no Rio Grande do Sul. Busque ajuda hoje.">
 
     <!-- HERO SECTION: DUAS COLUNAS -->
     <section class="bg-gray-50 py-16 md:py-24">
@@ -302,7 +303,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
           <!-- Dois Botões Lado a Lado (Responsivo) -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Botão 1: WhatsApp (Azul Escuro) -->
-            <button
+            <a
+              href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.familias)}`}
               class="bg-[#0a2540] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-900 transition transform hover:scale-105 flex items-center justify-center gap-3"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -311,10 +313,11 @@ import LayoutBase from "../layouts/LayoutBase.astro";
                 />
               </svg>
               Falar com Atendimento ao Familiar (WhatsApp)
-            </button>
+            </a>
 
             <!-- Botão 2: Ligar (Borda Teal) -->
-            <button
+            <a
+              href={`tel:${CONTACT_INFO.phone}`}
               class="border-2 border-[#0f4c5c] text-[#0f4c5c] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f4c5c] hover:text-white transition transform hover:scale-105 flex items-center justify-center gap-3"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -323,7 +326,7 @@ import LayoutBase from "../layouts/LayoutBase.astro";
                 />
               </svg>
               Ligar para Central de Orientação
-            </button>
+            </a>
           </div>
 
           <!-- Texto de Tranquilidade -->

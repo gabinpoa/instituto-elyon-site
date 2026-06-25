@@ -1,8 +1,9 @@
 ---
 import LayoutBase from "../layouts/LayoutBase.astro";
+import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Instituto Elyon - Suporte e Direcionamento">
+<LayoutBase title="Clínica de Recuperação RS | Instituto Elyon" description="Referência em reabilitação de dependência química e saúde mental no RS. Atendimento humanizado e plantão 24h. Recupere sua vida hoje. Ligue já.">
 
     <!-- HERO SECTION -->
     <section
@@ -21,7 +22,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
           com abordagem científica, ética e humanizada.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <button
+          <a
+            href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.index)}`}
             class="bg-[#0a2540] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0f4c5c] transition flex items-center justify-center gap-2"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +32,7 @@ import LayoutBase from "../layouts/LayoutBase.astro";
               />
             </svg>
             PEÇA AJUDA AGORA
-          </button>
+          </a>
           <button
             class="border-2 border-[#0a2540] text-[#0a2540] px-6 py-3 rounded-lg font-semibold hover:bg-[#0a2540] hover:text-white transition"
           >
@@ -522,7 +524,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
               >
             </div>
           </div>
-          <button
+          <a
+            href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.index)}`}
             class="bg-[#0a2540] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0f4c5c] transition flex items-center gap-2"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -531,7 +534,7 @@ import LayoutBase from "../layouts/LayoutBase.astro";
               />
             </svg>
             FALE CONOSCO
-          </button>
+          </a>
         </div>
       </div>
     </section>

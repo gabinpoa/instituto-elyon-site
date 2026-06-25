@@ -1,8 +1,9 @@
 ---
 import LayoutBase from "../layouts/LayoutBase.astro";
+import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Resgate Humanizado - Emergência 24h">
+<LayoutBase title="Resgate Dependente Químico RS | Plantão 24h" description="Serviço de resgate humanizado 24h para dependência química e saúde mental no RS. Protocolo ético, seguro e legal. Solicite intervenção imediata.">
 
 <style>
   /* Animação de pulso para o botão de emergência */
@@ -83,7 +84,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
 
         <!-- Botão de Chamada Massivo -->
         <div class="flex justify-center mb-16">
-          <button
+          <a
+            href={`tel:${CONTACT_INFO.phone}`}
             class="btn-emergency bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 sm:px-12 rounded-lg text-lg sm:text-xl transition-colors duration-300 flex items-center gap-3 shadow-lg"
           >
             <svg
@@ -97,8 +99,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
             </svg>
             LIGAR PARA A CENTRAL DE RESGATE
             <br class="hidden sm:block" />
-            <span class="text-base sm:text-lg">(0800 123 4567)</span>
-          </button>
+            <span class="text-base sm:text-lg">{CONTACT_INFO.formattedPhone}</span>
+          </a>
         </div>
 
         <!-- Grid de Garantias Legais - 3 Colunas -->

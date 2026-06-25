@@ -5,9 +5,10 @@ import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,11 +17,66 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content={description} />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://www.institutoelyon.com.br/#medicalbusiness",
+  "name": "Instituto Elyon",
+  "image": "https://www.institutoelyon.com.br/assets/images/og-image.jpg",
+  "description": "Referência em acolhimento, recuperação e reinserção social de pessoas afetadas pela Dependência Química e Comportamental em todo o Rio Grande do Sul.",
+  "url": "https://www.institutoelyon.com.br",
+  "telephone": "+55-51-3000-0000",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Carlos Gomes, 1000",
+    "addressLocality": "Porto Alegre",
+    "addressRegion": "RS",
+    "postalCode": "90480-001",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-30.0277",
+    "longitude": "-51.1784"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Rio Grande do Sul"
+  },
+  "medicalSpecialty": [
+    "AddictionMedicine",
+    "Psychiatry"
+  ],
+  "knowsAbout": [
+    "Tratamento de Dependência Química",
+    "Tratamento de Alcoolismo",
+    "Dependência Comportamental",
+    "Reabilitação de Transtornos Mentais",
+    "Resgate Humanizado de Emergência"
+  ]
+}
+</script>
     <style>
       * {
         font-family: "Lato", sans-serif;

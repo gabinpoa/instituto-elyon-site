@@ -1,8 +1,9 @@
 ---
 import LayoutBase from "../layouts/LayoutBase.astro";
+import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Tratamentos Especializados - Instituto Elyon">
+<LayoutBase title="Tratamento de Dependências em Porto Alegre | Elyon" description="Tratamentos especializados para dependência química, apostas online, telas e transtornos mentais no RS. Avaliação clínica diagnóstica. Agende agora.">
 
 <style>
   @keyframes pulse-subtle {
@@ -332,7 +333,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
           Entre em contato conosco e conheça nossos programas personalizados de
           tratamento.
         </p>
-        <button
+        <a
+          href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.tratamentos)}`}
           class="bg-[#ef4444] hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all flex items-center justify-center gap-3 mx-auto"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -341,7 +343,7 @@ import LayoutBase from "../layouts/LayoutBase.astro";
             />
           </svg>
           AGENDAR AVALIAÇÃO VIA WHATSAPP
-        </button>
+        </a>
       </div>
     </section>
 
