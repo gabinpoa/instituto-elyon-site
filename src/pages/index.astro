@@ -1,17 +1,539 @@
 ---
-
+import LayoutBase from "../layouts/LayoutBase.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<LayoutBase title="Instituto Elyon - Suporte e Direcionamento">
+
+    <!-- HERO SECTION -->
+    <section
+      id="inicio"
+      class="grid md:grid-cols-2 gap-8 items-center py-16 px-6 bg-gradient-to-b from-gray-50 to-white"
+    >
+      <div class="max-w-2xl">
+        <h1
+          class="font-serif text-4xl md:text-5xl font-bold text-[#0a2540] mb-6 leading-tight"
+        >
+          Reconstruindo vidas. Restaurando famílias. Promovendo dignidade.
+        </h1>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          Centro de excelência em Dependência Química, Saúde Mental e
+          Comportamento Humano. Acolhimento especializado para homens e mulheres
+          com abordagem científica, ética e humanizada.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-[#0a2540] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0f4c5c] transition flex items-center justify-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.025 0-2.031.313-2.896.893l-.207.124-2.15-.561.569 2.08.13.208a4.908 4.908 0 00-.398 2.326c0 2.7 2.201 4.9 4.9 4.9 1.308 0 2.541-.527 3.468-1.447.927-.92 1.439-2.155 1.439-3.468 0-2.699-2.201-4.9-4.9-4.9zm0-1.952c1.23 0 2.455.382 3.476 1.08l.248.153 2.654-.692-.683 2.598.145.233a6.87 6.87 0 011.019 3.555c0 3.89-3.168 7.057-7.057 7.057-1.954 0-3.814-.787-5.146-2.118-1.332-1.331-2.118-3.19-2.118-5.145 0-3.89 3.168-7.058 7.057-7.058z"
+              />
+            </svg>
+            PEÇA AJUDA AGORA
+          </button>
+          <button
+            class="border-2 border-[#0a2540] text-[#0a2540] px-6 py-3 rounded-lg font-semibold hover:bg-[#0a2540] hover:text-white transition"
+          >
+            CONHEÇA NOSSOS TRATAMENTOS
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div
+          class="bg-gradient-to-br from-gray-300 to-gray-400 rounded-2xl h-96 flex items-center justify-center overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1576091160550-112173f7f869?w=600&h=500&fit=crop"
+            alt="Ambiente acolhedor"
+            class="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- BARRA DE BENEFÍCIOS -->
+    <section class="bg-[#0a2540] text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-5 gap-8 text-center">
+        <div class="flex flex-col items-center gap-3">
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+          <p class="font-semibold text-sm">ATENDIMENTO<br />HUMANIZADO</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+            />
+          </svg>
+          <p class="font-semibold text-sm">EQUIPE<br />MULTIDISCIPLINAR</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5z"
+            />
+          </svg>
+          <p class="font-semibold text-sm">
+            METODOLOGIA<br />BASEADA EM EVIDÊNCIAS
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+            />
+          </svg>
+          <p class="font-semibold text-sm">
+            ESTRUTURA<br />SEGURA E ACOLHEDORA
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 7c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+            />
+          </svg>
+          <p class="font-semibold text-sm">
+            ATENDIMENTO<br />NO RIO GRANDE DO SUL
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE TRATAMOS -->
+    <section id="tratamentos" class="py-16 px-6 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="font-serif text-3xl md:text-4xl font-bold text-[#0a2540] mb-12"
+        >
+          O que tratamos
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 2c-1.1 0-2 .9-2 2v3H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2h-1V4c0-1.1-.9-2-2-2h-2zm0 2h2v3h-2V4zm7 5v10H7V9h10z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Dependência de Álcool
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Tratamento especializado para o uso abusivo e a dependência do
+              álcool.
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 3C6.48 3 2 6.82 2 11.5V21h20v-9.5c0-4.68-4.48-8.5-10-8.5zm0 2c3.86 0 7 2.69 7 6v1.5H5V11c0-3.31 3.14-6 7-6zm-7 9h14v6H5v-6z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Dependência de Drogas
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Abordagem completa para dependência de substâncias ilícitas e
+              lícitas.
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2c-1.1 0-2 .9-2 2v.18C4.84 5.21 3 7.65 3 10.5c0 4.41 3.59 8 8 8s8-3.59 8-8c0-2.85-1.84-5.29-4-6.32V4c0-1.1-.9-2-2-2h-2zm2 18c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Dependência de Medicamentos
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Tratamento para uso problemático e dependência de medicamentos
+              prescritos.
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Jogos e Apostas
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Tratamento para o transtorno do jogo e apostas online (ludopatia).
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 9H9V5h2v4zm3-4v4h2V5h-2zm4 0v4h2V5h-2zM5 5v4h2V5H5zm-1 9h2v-2H4v2zm3 0h2v-2H7v2zm3 0h2v-2h-2v2zm3 0h2v-2h-2v2zm3 0h2v-2h-2v2zM4 19h16v-2H4v2z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Compulsão Alimentar
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Acompanhamento para compulsão alimentar e transtornos alimentares.
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition"
+          >
+            <div class="flex justify-center mb-6">
+              <svg
+                class="w-12 h-12 text-[#0f4c5c]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg text-[#0a2540] text-center mb-3">
+              Dependência Tecnológica
+            </h3>
+            <p class="text-gray-600 text-center text-sm mb-6">
+              Tratamento para uso excessivo de internet, redes sociais e jogos
+              digitais.
+            </p>
+            <a
+              href="#"
+              class="text-[#0f4c5c] font-semibold text-sm hover:underline"
+              >Saiba mais →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSA ABORDAGEM -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2
+            class="font-serif text-3xl md:text-4xl font-bold text-[#0a2540] mb-6"
+          >
+            Nossa abordagem
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Nossa experiência é integrada e individualizada. Consideramos o ser
+            humano em sua totalidade: saúde física, mental, emocional, familiar
+            e social. Buscamos trabalhar a redução de danos e a inclusão social.
+          </p>
+          <button
+            class="bg-[#0a2540] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0f4c5c] transition"
+          >
+            CONHEÇA NOSSA METODOLOGIA
+          </button>
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <svg
+              class="w-8 h-8 text-[#0f4c5c] flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-bold text-[#0a2540] mb-2">
+                Avaliação Individualizada
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Entendimento completo da história e necessidades de cada pessoa.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg
+              class="w-8 h-8 text-[#0f4c5c] flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-bold text-[#0a2540] mb-2">
+                Plano Terapêutico Personalizado
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Estratégias especializadas para cada caso durante o tratamento.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg
+              class="w-8 h-8 text-[#0f4c5c] flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-bold text-[#0a2540] mb-2">
+                Acompanhamento Contínuo
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Monitoramento clínico e emocional durante e após o processo.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg
+              class="w-8 h-8 text-[#0f4c5c] flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-bold text-[#0a2540] mb-2">Reinserção Social</h3>
+              <p class="text-gray-600 text-sm">
+                Preparação para uma vida produtiva, significativa e
+                satisfatória.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg
+              class="w-8 h-8 text-[#0f4c5c] flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-bold text-[#0a2540] mb-2">Apoio à Família</h3>
+              <p class="text-gray-600 text-sm">
+                A família também recebe informação, suporte e acolhimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DUPLA: RESGATE + FAMÍLIAS -->
+    <section id="familias" class="py-16 px-6 bg-gray-50">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+        <!-- Resgate Humanizado -->
+        <div
+          class="bg-gradient-to-br from-[#0a2540] to-[#0f4c5c] text-white p-12 rounded-xl overflow-hidden relative h-80 flex flex-col justify-end"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1551921294-5a11d1d8d6d9?w=400&h=400&fit=crop&quot;);
+            background-size: cover;
+            background-blend-mode: overlay;
+          "
+        >
+          <h3 class="font-serif text-2xl font-bold mb-3">Resgate Humanizado</h3>
+          <p class="mb-6 leading-relaxed">
+            Quando pedir ajuda se torna urgente. Abordagem ética, segura e
+            respeitosa com a dignidade humana.
+          </p>
+          <button
+            class="bg-white text-[#0a2540] px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition w-fit"
+          >
+            SAIBA MAIS
+          </button>
+        </div>
+
+        <!-- Famílias -->
+        <div>
+          <h3
+            class="font-serif text-2xl md:text-3xl font-bold text-[#0a2540] mb-6"
+          >
+            Você não precisa enfrentar isso sozinho.
+          </h3>
+          <p class="text-gray-700 mb-8 leading-relaxed">
+            A dependência é uma doença que afeta toda a família. Estamos aqui
+            para caminhar junto com você e seus entes queridos no processo de
+            recuperação.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm"
+                >Orientação sobre dependência</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm">Reuniões terapêuticas</span>
+            </div>
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm"
+                >Acompanhamento durante o tratamento</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm">Prevenção de recaídas</span>
+            </div>
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm"
+                >Educação sobre comportamentos</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <svg
+                class="w-5 h-5 text-[#0f4c5c] flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm"
+                >Fortalecimento de vínculos</span
+              >
+            </div>
+          </div>
+          <button
+            class="bg-[#0a2540] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0f4c5c] transition flex items-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.025 0-2.031.313-2.896.893l-.207.124-2.15-.561.569 2.08.13.208a4.908 4.908 0 00-.398 2.326c0 2.7 2.201 4.9 4.9 4.9 1.308 0 2.541-.527 3.468-1.447.927-.92 1.439-2.155 1.439-3.468 0-2.699-2.201-4.9-4.9-4.9zm0-1.952c1.23 0 2.455.382 3.476 1.08l.248.153 2.654-.692-.683 2.598.145.233a6.87 6.87 0 011.019 3.555c0 3.89-3.168 7.057-7.057 7.057-1.954 0-3.814-.787-5.146-2.118-1.332-1.331-2.118-3.19-2.118-5.145 0-3.89 3.168-7.058 7.057-7.058z"
+              />
+            </svg>
+            FALE CONOSCO
+          </button>
+        </div>
+      </div>
+    </section>
+
+</LayoutBase>
