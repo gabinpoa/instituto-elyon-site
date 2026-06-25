@@ -3,338 +3,320 @@ import LayoutBase from "../layouts/LayoutBase.astro";
 import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Apoio Familiar Dependência Química RS | Instituto Elyon" description="A dependência afeta toda a família. Oferecemos suporte terapêutico, orientação e ferramentas de enfrentamento no Rio Grande do Sul. Busque ajuda hoje.">
-
-    <!-- HERO SECTION: DUAS COLUNAS -->
-    <section class="bg-gray-50 py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <!-- Coluna Esquerda: Texto -->
-          <div class="flex flex-col gap-6">
-            <h1
-              class="serif-title text-4xl md:text-5xl font-bold text-[#0a2540] leading-tight text-balance"
-            >
-              Você não precisa enfrentar isso sozinho.
-            </h1>
-            <p class="text-lg text-gray-700 leading-relaxed text-balance">
-              A dependência é uma doença que afeta toda a família. O núcleo
-              familiar adoece junto, mas também faz parte do processo de cura.
-            </p>
-            <p class="text-gray-600 leading-relaxed">
-              Entendemos que cada membro da família passa por suas próprias
-              lutas durante essa jornada. Por isso, oferecemos suporte integral
-              e humanizado para toda a família, não apenas para o paciente.
-            </p>
-          </div>
-
-          <!-- Coluna Direita: Imagem Placeholder -->
-          <div class="flex items-center justify-center">
-            <div
-              class="w-full aspect-square bg-gradient-to-br from-[#0a2540] to-[#0f4c5c] rounded-2xl shadow-lg flex items-center justify-center"
-            >
-              <div class="text-center text-white">
-                <svg
-                  class="w-24 h-24 mx-auto mb-4 opacity-50"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M12 4.354a4 4 0 110 5.292M9 12H3m6 0a6 6 0 110 12 6 6 0 010-12zm0 0h6m-9-6h9"
-                  ></path>
-                </svg>
-                <p class="text-sm opacity-75">
-                  Família Unida no Caminho da Recuperação
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEÇÃO BRANCA: PROGRAMA DE AMPARO FAMILIAR -->
-    <section class="py-20 md:py-28 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Título Centralizado -->
-        <div class="text-center mb-16">
-          <h2
-            class="serif-title text-4xl md:text-5xl font-bold text-[#0a2540] mb-4 text-balance"
+<LayoutBase
+  title="Consultoria Familiar Dependência Química RS | Elyon"
+  description="A dependência afeta toda a estrutura familiar. Oferecemos consultoria, suporte terapêutico e direcionamento no Rio Grande do Sul. Ligue hoje."
+>
+  <!-- HERO SECTION: DUAS COLUNAS -->
+  <section class="bg-gray-50 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Coluna Esquerda: Texto -->
+        <div class="flex flex-col gap-6">
+          <h1
+            class="serif-title text-4xl md:text-5xl font-bold text-[#0a2540] leading-tight text-balance"
           >
-            Como Oferecemos Suporte à Sua Família
-          </h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Programas integrados e humanizados para fortalecer laços e promover
-            a recuperação compartilhada.
+            Você não precisa enfrentar isso sozinho.
+          </h1>
+          <p class="text-lg text-gray-700 leading-relaxed text-balance">
+            A dependência é uma doença que afeta toda a família. O núcleo
+            familiar adoece junto, mas também faz parte do processo de cura.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Entendemos que cada membro da família passa por suas próprias lutas
+            durante essa jornada. Por isso, oferecemos suporte integral e
+            humanizado para toda a família, não apenas para o paciente.
           </p>
         </div>
 
-        <!-- Grid de 6 Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1: Orientação Familiar -->
+        <!-- Coluna Direita: Imagem -->
+        <div class="flex items-center justify-center">
           <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+            class="w-full aspect-square rounded-2xl shadow-lg overflow-hidden"
           >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Orientação Familiar
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Direcionamento prático em momentos de crise, com profissionais
-              preparados para guiar a família nas decisões mais difíceis.
-            </p>
-          </div>
-
-          <!-- Card 2: Reuniões Terapêuticas -->
-          <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
-          >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Reuniões Terapêuticas
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Espaços seguros de fala e escuta mútua, onde cada membro da
-              família pode expressar sentimentos e preocupações sem julgamentos.
-            </p>
-          </div>
-
-          <!-- Card 3: Acompanhamento Contínuo -->
-          <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
-          >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Acompanhamento Contínuo
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Feedbacks constantes sobre a evolução do paciente, mantendo a
-              família informada e preparada para os próximos passos.
-            </p>
-          </div>
-
-          <!-- Card 4: Educação sobre Dependência -->
-          <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
-          >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Educação sobre Dependência
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Informação clara e científica para a família compreender a doença,
-              seus mecanismos e como agir de forma construtiva.
-            </p>
-          </div>
-
-          <!-- Card 5: Prevenção de Recaídas -->
-          <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
-          >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Prevenção de Recaídas
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Treinamento prático para preparar o ambiente familiar após a alta,
-              criando barreiras protetoras e pontos de apoio.
-            </p>
-          </div>
-
-          <!-- Card 6: Fortalecimento de Vínculos -->
-          <div
-            class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
-          >
-            <div class="flex gap-4 mb-4">
-              <div
-                class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
-              >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="serif-title text-xl font-bold text-[#0a2540]">
-                  Fortalecimento de Vínculos
-                </h3>
-              </div>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
-              Reconstrução de pontes afetivas baseadas na confiança, reparando
-              danos causados pela dependência e restaurando relacionamentos.
-            </p>
+            <img
+              src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=800&fit=crop"
+              alt="Família unida em apoio mútuo"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SEÇÃO DE CONVERSÃO/CAPTURA -->
-    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200"
+  <!-- SEÇÃO BRANCA: PROGRAMA DE AMPARO FAMILIAR -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Título Centralizado -->
+      <div class="text-center mb-16">
+        <h2
+          class="serif-title text-4xl md:text-5xl font-bold text-[#0a2540] mb-4 text-balance"
         >
-          <!-- Texto de Chamada -->
-          <div class="text-center mb-10">
-            <h3
-              class="serif-title text-3xl md:text-4xl font-bold text-[#0a2540] mb-4 text-balance"
-            >
-              Está com dúvidas sobre como agir com um familiar?
-            </h3>
-            <p class="text-lg text-gray-700 text-balance">
-              Nós ligamos para você ou orientamos pelo WhatsApp. Conversa
-              confidencial, sem compromissos.
-            </p>
-          </div>
+          Como Oferecemos Suporte à Sua Família
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Programas integrados e humanizados para fortalecer laços e promover a
+          recuperação compartilhada.
+        </p>
+      </div>
 
-          <!-- Dois Botões Lado a Lado (Responsivo) -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Botão 1: WhatsApp (Azul Escuro) -->
-            <a
-              href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.familias)}`}
-              class="bg-[#0a2540] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-900 transition transform hover:scale-105 flex items-center justify-center gap-3"
+      <!-- Grid de 6 Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1: Orientação Familiar -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
             >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.732 5.408 2.124 7.718l-2.256 8.46a.961.961 0 001.372 1.002l8.54-2.702c2.22 1.712 4.882 2.84 7.784 2.84 5.412 0 9.896-4.484 9.896-9.897 0-5.412-4.484-9.799-9.896-9.799z"
-                />
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
-              Falar com Atendimento ao Familiar (WhatsApp)
-            </a>
-
-            <!-- Botão 2: Ligar (Borda Teal) -->
-            <a
-              href={`tel:${CONTACT_INFO.phone}`}
-              class="border-2 border-[#0f4c5c] text-[#0f4c5c] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f4c5c] hover:text-white transition transform hover:scale-105 flex items-center justify-center gap-3"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
-                />
-              </svg>
-              Ligar para Central de Orientação
-            </a>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Orientação Familiar
+              </h3>
+            </div>
           </div>
+          <p class="text-gray-700 leading-relaxed">
+            Direcionamento prático em momentos de crise, com profissionais
+            preparados para guiar a família nas decisões mais difíceis.
+          </p>
+        </div>
 
-          <!-- Texto de Tranquilidade -->
-          <p class="text-center text-gray-600 mt-8 text-sm">
-            Atendimento 24 horas • Sigiloso e confidencial • Sem julgamentos
+        <!-- Card 2: Reuniões Terapêuticas -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Reuniões Terapêuticas
+              </h3>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            Espaços seguros de fala e escuta mútua, onde cada membro da família
+            pode expressar sentimentos e preocupações sem julgamentos.
+          </p>
+        </div>
+
+        <!-- Card 3: Acompanhamento Contínuo -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Acompanhamento Contínuo
+              </h3>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            Feedbacks constantes sobre a evolução do paciente, mantendo a
+            família informada e preparada para os próximos passos.
+          </p>
+        </div>
+
+        <!-- Card 4: Educação sobre Dependência -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Educação sobre Dependência
+              </h3>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            Informação clara e científica para a família compreender a doença,
+            seus mecanismos e como agir de forma construtiva.
+          </p>
+        </div>
+
+        <!-- Card 5: Prevenção de Recaídas -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Prevenção de Recaídas
+              </h3>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            Treinamento prático para preparar o ambiente familiar após a alta,
+            criando barreiras protetoras e pontos de apoio.
+          </p>
+        </div>
+
+        <!-- Card 6: Fortalecimento de Vínculos -->
+        <div
+          class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg transition"
+        >
+          <div class="flex gap-4 mb-4">
+            <div
+              class="w-12 h-12 bg-[#0a2540] rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="serif-title text-xl font-bold text-[#0a2540]">
+                Fortalecimento de Vínculos
+              </h3>
+            </div>
+          </div>
+          <p class="text-gray-700 leading-relaxed">
+            Reconstrução de pontes afetivas baseadas na confiança, reparando
+            danos causados pela dependência e restaurando relacionamentos.
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- SEÇÃO DE CONVERSÃO/CAPTURA -->
+  <section class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200"
+      >
+        <!-- Texto de Chamada -->
+        <div class="text-center mb-10">
+          <h3
+            class="serif-title text-3xl md:text-4xl font-bold text-[#0a2540] mb-4 text-balance"
+          >
+            Está com dúvidas sobre como agir com um familiar?
+          </h3>
+          <p class="text-lg text-gray-700 text-balance">
+            Nós ligamos para você ou orientamos pelo WhatsApp. Conversa
+            confidencial, sem compromissos.
+          </p>
+        </div>
+
+        <!-- Dois Botões Lado a Lado (Responsivo) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Botão 1: WhatsApp (Azul Escuro) -->
+          <a
+            href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.familias)}`}
+            class="bg-[#0a2540] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-900 transition transform hover:scale-105 flex items-center justify-center gap-3"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.732 5.408 2.124 7.718l-2.256 8.46a.961.961 0 001.372 1.002l8.54-2.702c2.22 1.712 4.882 2.84 7.784 2.84 5.412 0 9.896-4.484 9.896-9.897 0-5.412-4.484-9.799-9.896-9.799z"
+              ></path>
+            </svg>
+            Falar com Atendimento ao Familiar (WhatsApp)
+          </a>
+
+          <!-- Botão 2: Ligar (Borda Teal) -->
+          <a
+            href={`tel:${CONTACT_INFO.phone}`}
+            class="border-2 border-[#0f4c5c] text-[#0f4c5c] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#0f4c5c] hover:text-white transition transform hover:scale-105 flex items-center justify-center gap-3"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              ></path>
+            </svg>
+            Ligar para Central de Orientação
+          </a>
+        </div>
+
+        <!-- Texto de Tranquilidade -->
+        <p class="text-center text-gray-600 mt-8 text-sm">
+          Atendimento 24 horas • Sigiloso e confidencial • Sem julgamentos
+        </p>
+      </div>
+    </div>
+  </section>
 </LayoutBase>

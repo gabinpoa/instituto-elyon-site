@@ -3,348 +3,348 @@ import LayoutBase from "../layouts/LayoutBase.astro";
 import { CONTACT_INFO, WHATSAPP_MESSAGES } from "../constants.js";
 ---
 
-<LayoutBase title="Tratamento de Dependências em Porto Alegre | Elyon" description="Tratamentos especializados para dependência química, apostas online, telas e transtornos mentais no RS. Avaliação clínica diagnóstica. Agende agora.">
-
-<style>
-  @keyframes pulse-subtle {
-    0%,
-    100% {
-      opacity: 1;
+<LayoutBase
+  title="Direcionamento para Dependências Porto Alegre | Elyon"
+  description="Consultoria e encaminhamento para dependência química, apostas online e saúde mental no RS. Orientação especializada. Agende uma avaliação."
+>
+  <style>
+    @keyframes pulse-subtle {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
     }
-    50% {
-      opacity: 0.7;
+    .pulse-subtle {
+      animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
-  }
-  .pulse-subtle {
-    animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-</style>
+  </style>
 
-    <!-- HERO BANNER -->
-    <section class="bg-gradient-to-b from-gray-100 to-gray-50 py-16 md:py-24">
-      <div class="max-w-5xl mx-auto px-4 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold serif text-[#0a2540] mb-4">
-          Tratamentos Especializados em Dependência e Saúde Mental
-        </h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          Programas terapêuticos baseados em ciência, cuidado e reconstrução
-          humana.
-        </p>
-      </div>
-    </section>
+  <!-- HERO BANNER -->
+  <section class="bg-gradient-to-b from-gray-100 to-gray-50 py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold serif text-[#0a2540] mb-4">
+        Tratamentos Especializados em Dependência e Saúde Mental
+      </h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        Programas terapêuticos baseados em ciência, cuidado e reconstrução
+        humana.
+      </p>
+    </div>
+  </section>
 
-    <!-- SEÇÃO 1: DEPENDÊNCIA QUÍMICA -->
-    <section class="py-16 md:py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="mb-12">
-          <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
-            1. Tratamento para Dependência Química e Medicamentosa
-          </h3>
-          <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Card: Álcool -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 113 0v1m0 0V11m0-5.5a1.5 1.5 0 00-3 0v3m0 0V11"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Dependência de Álcool
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento especializado para consumo abusivo, dependência crônica
-              e prevenção de recaídas. Abordagem humanizada com suporte
-              terapêutico contínuo.
-            </p>
-          </div>
-
-          <!-- Card: Drogas -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Dependência de Drogas
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento para cocaína, crack, maconha, drogas sintéticas e
-              outras substâncias. Programas de desintoxicação segura com
-              monitoramento clínico.
-            </p>
-          </div>
-
-          <!-- Card: Medicamentos -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19.5 12c0-1.657-.895-3.107-2.229-3.897M9.75 9.75l3 3m0 0l3-3M9.75 9.75L6.75 6.75m11.25 0l-3 3m0 0l3 3"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Dependência de Medicamentos
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento para benzodiazepínicos, opioides, sedativos e outros
-              medicamentos. Redução gradual com acompanhamento médico
-              especializado.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEÇÃO 2: DEPENDÊNCIAS COMPORTAMENTAIS -->
-    <section class="py-16 md:py-24 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="mb-12">
-          <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
-            2. Transtornos Comportamentais e Compulsões
-          </h3>
-          <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Card: Jogos -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Jogos e Apostas Online
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento para vício em jogos eletrônicos, apostas em plataformas
-              digitais, endividamento e perda de controle financeiro e
-              emocional.
-            </p>
-          </div>
-
-          <!-- Card: Compulsão Alimentar -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Compulsão Alimentar
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento especializado para comer emocional, ansiedade
-              alimentar, transtornos do comportamento alimentar e relação
-              disfuncional com comida.
-            </p>
-          </div>
-
-          <!-- Card: Dependência Tecnológica -->
-          <div
-            class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
-          >
-            <div
-              class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-8 h-8 text-[#0a2540]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
-              Dependência Tecnológica
-            </h4>
-            <p class="text-gray-700 leading-relaxed text-sm">
-              Tratamento para vício em smartphones, redes sociais, games
-              digitais e uso compulsivo de telas. Recuperação de equilíbrio
-              digital e vida real.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEÇÃO 3: SAÚDE MENTAL E COMORBIDADES -->
-    <section class="py-16 md:py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="mb-12">
-          <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
-            3. Saúde Mental e Comorbidades
-          </h3>
-          <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12 items-start">
-          <!-- Coluna Esquerda: Texto -->
-          <div>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              O tratamento integrado da dependência com a saúde mental é
-              essencial para a recuperação completa. Muitos pacientes que
-              enfrentam dependência química ou comportamental também lidam com
-              depressão, ansiedade, traumas psicológicos e outros transtornos.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              Nossa abordagem multidisciplinar reconhece essas conexões e
-              oferece programas terapêuticos que tratam simultaneamente a
-              dependência e os transtornos mentais associados, proporcionando
-              recuperação sustentável e reconstrução da qualidade de vida.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-              Cada paciente recebe uma avaliação clínica diagnóstica completa,
-              permitindo a personalização do tratamento de acordo com suas
-              necessidades específicas e características clínicas.
-            </p>
-          </div>
-
-          <!-- Coluna Direita: Badges -->
-          <div
-            class="bg-gradient-to-br from-blue-50 to-gray-50 rounded-lg p-8 border border-gray-200"
-          >
-            <h4 class="text-lg font-bold serif text-[#0a2540] mb-6">
-              Transtornos Tratados
-            </h4>
-            <div class="space-y-3">
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                Depressão
-              </div>
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                Ansiedade
-              </div>
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                Transtorno Bipolar
-              </div>
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                TDAH
-              </div>
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                Transtornos do Sono
-              </div>
-              <div
-                class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
-              >
-                Traumas Psicológicos
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA DE FECHAMENTO -->
-    <section class="bg-[#0a2540] py-16 md:py-20">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3 class="text-3xl md:text-4xl font-bold serif text-white mb-6">
-          Precisa de uma avaliação clínica diagnóstica para você ou um familiar?
+  <!-- SEÇÃO 1: DEPENDÊNCIA QUÍMICA -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
+          1. Tratamento para Dependência Química e Medicamentosa
         </h3>
-        <p class="text-lg text-gray-200 mb-8">
-          Entre em contato conosco e conheça nossos programas personalizados de
-          tratamento.
-        </p>
-        <a
-          href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.tratamentos)}`}
-          class="bg-[#ef4444] hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all flex items-center justify-center gap-3 mx-auto"
-        >
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M17.707 12.293a.999.999 0 0 0-1.414 0L13 15.586V6a1 1 0 1 0-2 0v9.586l-3.293-3.293a1 1 0 1 0-1.414 1.414l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414z"
-            />
-          </svg>
-          AGENDAR AVALIAÇÃO VIA WHATSAPP
-        </a>
+        <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
       </div>
-    </section>
 
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card: Álcool -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 113 0v1m0 0V11m0-5.5a1.5 1.5 0 00-3 0v3m0 0V11"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Dependência de Álcool
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento especializado para consumo abusivo, dependência crônica e
+            prevenção de recaídas. Abordagem humanizada com suporte terapêutico
+            contínuo.
+          </p>
+        </div>
+
+        <!-- Card: Drogas -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Dependência de Drogas
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento para cocaína, crack, maconha, drogas sintéticas e outras
+            substâncias. Programas de desintoxicação segura com monitoramento
+            clínico.
+          </p>
+        </div>
+
+        <!-- Card: Medicamentos -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.5 12c0-1.657-.895-3.107-2.229-3.897M9.75 9.75l3 3m0 0l3-3M9.75 9.75L6.75 6.75m11.25 0l-3 3m0 0l3 3"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Dependência de Medicamentos
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento para benzodiazepínicos, opioides, sedativos e outros
+            medicamentos. Redução gradual com acompanhamento médico
+            especializado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: DEPENDÊNCIAS COMPORTAMENTAIS -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
+          2. Transtornos Comportamentais e Compulsões
+        </h3>
+        <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card: Jogos -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Jogos e Apostas Online
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento para vício em jogos eletrônicos, apostas em plataformas
+            digitais, endividamento e perda de controle financeiro e emocional.
+          </p>
+        </div>
+
+        <!-- Card: Compulsão Alimentar -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Compulsão Alimentar
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento especializado para comer emocional, ansiedade alimentar,
+            transtornos do comportamento alimentar e relação disfuncional com
+            comida.
+          </p>
+        </div>
+
+        <!-- Card: Dependência Tecnológica -->
+        <div
+          class="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-lg hover:border-[#0a2540] transition-all"
+        >
+          <div
+            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-[#0a2540]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold serif text-[#0a2540] mb-3">
+            Dependência Tecnológica
+          </h4>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Tratamento para vício em smartphones, redes sociais, games digitais
+            e uso compulsivo de telas. Recuperação de equilíbrio digital e vida
+            real.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: SAÚDE MENTAL E COMORBIDADES -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold serif text-[#0a2540] mb-2">
+          3. Saúde Mental e Comorbidades
+        </h3>
+        <div class="w-16 h-1 bg-[#ef4444] rounded-full"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <!-- Coluna Esquerda: Texto -->
+        <div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            O tratamento integrado da dependência com a saúde mental é essencial
+            para a recuperação completa. Muitos pacientes que enfrentam
+            dependência química ou comportamental também lidam com depressão,
+            ansiedade, traumas psicológicos e outros transtornos.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Nossa abordagem multidisciplinar reconhece essas conexões e oferece
+            programas terapêuticos que tratam simultaneamente a dependência e os
+            transtornos mentais associados, proporcionando recuperação
+            sustentável e reconstrução da qualidade de vida.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Cada paciente recebe uma avaliação clínica diagnóstica completa,
+            permitindo a personalização do tratamento de acordo com suas
+            necessidades específicas e características clínicas.
+          </p>
+        </div>
+
+        <!-- Coluna Direita: Badges -->
+        <div
+          class="bg-gradient-to-br from-blue-50 to-gray-50 rounded-lg p-8 border border-gray-200"
+        >
+          <h4 class="text-lg font-bold serif text-[#0a2540] mb-6">
+            Transtornos Tratados
+          </h4>
+          <div class="space-y-3">
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              Depressão
+            </div>
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              Ansiedade
+            </div>
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              Transtorno Bipolar
+            </div>
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              TDAH
+            </div>
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              Transtornos do Sono
+            </div>
+            <div
+              class="inline-block bg-white border-2 border-[#0a2540] rounded-full px-6 py-2 text-sm font-semibold text-[#0a2540] mr-2 mb-2"
+            >
+              Traumas Psicológicos
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DE FECHAMENTO -->
+  <section class="bg-[#0a2540] py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl md:text-4xl font-bold serif text-white mb-6">
+        Precisa de uma avaliação clínica diagnóstica para você ou um familiar?
+      </h3>
+      <p class="text-lg text-gray-200 mb-8">
+        Entre em contato conosco e conheça nossos programas personalizados de
+        tratamento.
+      </p>
+      <a
+        href={`${CONTACT_INFO.whatsappBaseUrl}${encodeURIComponent(WHATSAPP_MESSAGES.tratamentos)}`}
+        class="bg-[#ef4444] hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all flex items-center justify-center gap-3 mx-auto"
+      >
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M17.707 12.293a.999.999 0 0 0-1.414 0L13 15.586V6a1 1 0 1 0-2 0v9.586l-3.293-3.293a1 1 0 1 0-1.414 1.414l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414z"
+          ></path>
+        </svg>
+        AGENDAR AVALIAÇÃO VIA WHATSAPP
+      </a>
+    </div>
+  </section>
 </LayoutBase>

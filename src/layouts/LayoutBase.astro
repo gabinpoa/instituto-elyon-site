@@ -23,60 +23,56 @@ const { title, description } = Astro.props;
       rel="stylesheet"
     />
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "@id": "https://www.institutoelyon.com.br/#medicalbusiness",
-  "name": "Instituto Elyon",
-  "image": "https://www.institutoelyon.com.br/assets/images/og-image.jpg",
-  "description": "Referência em acolhimento, recuperação e reinserção social de pessoas afetadas pela Dependência Química e Comportamental em todo o Rio Grande do Sul.",
-  "url": "https://www.institutoelyon.com.br",
-  "telephone": "+55-51-3000-0000",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Carlos Gomes, 1000",
-    "addressLocality": "Porto Alegre",
-    "addressRegion": "RS",
-    "postalCode": "90480-001",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "-30.0277",
-    "longitude": "-51.1784"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Rio Grande do Sul"
-  },
-  "medicalSpecialty": [
-    "AddictionMedicine",
-    "Psychiatry"
-  ],
-  "knowsAbout": [
-    "Tratamento de Dependência Química",
-    "Tratamento de Alcoolismo",
-    "Dependência Comportamental",
-    "Reabilitação de Transtornos Mentais",
-    "Resgate Humanizado de Emergência"
-  ]
-}
-</script>
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://www.institutoelyon.com.br/#professionalservice",
+        "name": "Instituto Elyon",
+        "image": "https://www.institutoelyon.com.br/assets/images/og-image.jpg",
+        "description": "Consultoria especializada, suporte familiar, serviço de resgate humanizado 24h and direcionamento para comunidades terapêuticas parceiras no Rio Grande do Sul.",
+        "url": "https://www.institutoelyon.com.br",
+        "telephone": "+55-51-3000-0000",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Carlos Gomes, 1000",
+          "addressLocality": "Porto Alegre",
+          "addressRegion": "RS",
+          "postalCode": "90480-001",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-30.0277",
+          "longitude": "-51.1784"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Rio Grande do Sul"
+        },
+        "knowsAbout": [
+          "Consultoria em Dependência Química",
+          "Direcionamento e Encaminhamento para Comunidades Terapêuticas",
+          "Suporte e Orientação Familiar",
+          "Acompanhamento Terapêutico",
+          "Resgate Humanizado 24h"
+        ]
+      }
+    </script>
     <style>
       * {
         font-family: "Lato", sans-serif;
